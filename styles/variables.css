@@ -1,4 +1,20 @@
 :root {
   --bg-image: url(../images/cover-image-dark.png);
   --bg-color: #000028;
+  --main-font-family: 'IBM Plex mono';
+  --main-text-size: 18px;
+  --main-text-line-height: 23.4px;
+  --main-offset: 10px;
+  --decoration-color: #ff0070;
+  --decorative-lamp-display: flex;
+  --decorative-text-line-height: 25px;
+  --theme-menu-color: #ff0070;
+  --menu-button-line-height: 18px;
+  --button-hover-border-color: #FF007066;
+  --header-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --header-title-line-height: 83%;
+  --header-title-color: #DB00FF;
+  --accent-color: #ff0070;
+  --title-decor-text-color: #000028;
+  --title-decor-bg-color: #ff0070;
 }

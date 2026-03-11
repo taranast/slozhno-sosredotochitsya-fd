@@ -4,4 +4,122 @@
   background-size: cover;
   background-attachment: fixed;
   background-color: var(--bg-color);
+  font-family: var(--main-font-family), sans-serif;
+  font-size: var(--main-text-size);
+  line-height: var(--main-text-line-height);
+}
+
+.decorated-zone {
+  position: relative;
+}
+
+.decorated-zone::before,
+.decorated-zone::after {
+  content: "";
+  block-size: 25px;
+  inline-size: 25px;
+  position: absolute;
+}
+
+.decorated-zone::before {
+  left: var(--main-offset);
+  bottom: var(--main-offset);
+  border-inline-start: 1px solid var(--decoration-color);
+  border-block-end: 1px solid var(--decoration-color);
+}
+
+.decorated-zone::after {
+  right: var(--main-offset);
+  top: var(--main-offset);
+  border-inline-end: 1px solid var(--decoration-color);
+  border-block-start: 1px solid var(--decoration-color);
+}
+
+.header {
+  block-size: 100vh;
+  min-block-size: 668px;
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  padding: var(--main-offset);
+}
+
+.decorative-lamp {
+  position: absolute;
+  top: calc(var(--main-offset) + 1px);
+  right: calc(var(--main-offset) + 9px);
+  color: var(--decoration-color);
+  display: var(--decorative-lamp-display);
+  gap: 9px;
+  align-items: center;
+  line-height: var(--decorative-text-line-height);
+  font-weight: 400;
+}
+
+.decorative-lamp::after {
+  content: "";
+  display: block;
+  block-size: 9px;
+  inline-size: 9px;
+  border-radius: 50%;
+  background-color: currentColor;
+  box-shadow: 0px 0px 4px 2px currentColor;
+}
+
+.header__theme-menu {
+  justify-self: end;
+  align-self: center;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  color: var(--theme-menu-color);
+  border: none;
+  line-height: var(--menu-button-line-height);
+  text-transform: lowercase;
+  background-color: transparent;
+  font-weight: 400;
+  padding: 3px 13px;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid currentColor;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid var(--button-hover-border-color);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-block-end: 1px solid currentColor;
+  outline: none;
+}
+
+.header__title {
+  color: var(--header-title-color);
+  text-shadow: 4px 4px var(--accent-color);
+  font-size: var(--header-title-size);
+  align-self: center;
+  justify-self: start;
+  font-weight: 700;
+  line-height: var(--header-title-line-height);
+}
+
+.title-decor {
+  color: var(--title-decor-text-color);
+  background-color: var(--title-decor-bg-color);
+}
+
+.header__description {
+  font-weight: 700;
+  align-self: center;
+  justify-self: start;
 }

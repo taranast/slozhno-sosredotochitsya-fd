@@ -1,4 +1,12 @@
 :root.theme-dark {
   --bg-image: url(../images/cover-image-dark.png);
   --bg-color: #000028;
+  --decoration-color: #ff0070;
+  --decorative-lamp-display: flex;
+  --theme-menu-color: #ff0070;
+  --button-hover-border-color: #FF007066;
+  --header-title-color: #DB00FF;
+  --accent-color: #ff0070;
+  --title-decor-text-color: #000028;
+  --title-decor-bg-color: #ff0070;
 }

@@ -1,4 +1,12 @@
 :root.theme-light {
   --bg-image: url(../images/cover-image-light.png);
   --bg-color: #fff1f7;
+  --decoration-color: #353430;
+  --decorative-lamp-display: none;
+  --theme-menu-color: #353430;
+  --button-hover-border-color: #32312D66;
+  --header-title-color: #FFC2E6;
+  --accent-color: #FF8DCB;
+  --title-decor-text-color: #353430;
+  --title-decor-bg-color: #FF8DCB;
 }
