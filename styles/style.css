@@ -123,3 +123,10 @@
   align-self: center;
   justify-self: start;
 }
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-between-content);
+  margin-block: var(--gap-between-blocks);
+}

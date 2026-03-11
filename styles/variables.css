@@ -17,4 +17,6 @@
   --accent-color: #ff0070;
   --title-decor-text-color: #000028;
   --title-decor-bg-color: #ff0070;
+  --gap-between-blocks: 40px;
+  --gap-between-content: 50px;
 }
