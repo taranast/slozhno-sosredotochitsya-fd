@@ -21,4 +21,7 @@
   --gap-between-content: 50px;
   --section-title-color: #ff0070;
   --card-text-color: #F1B2CE;
+  --footer-title-color: #DB00FF;
+  --footer-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --footer-title-line-height: 83%;
 }

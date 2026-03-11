@@ -213,3 +213,19 @@
   inline-size: 100%;
   object-fit: cover;
 }
+
+.footer {
+  block-size: 100vh;
+  min-block-size: 668px;
+  display: grid;
+  padding: var(--offsets);
+}
+
+.footer__title {
+  color: var(--footer-title-color);
+  text-shadow: 2px 2px var(--accent-color);
+  font-size: var(--footer-title-size);
+  align-self: center;
+  justify-self: center;
+  line-height: var(--footer-title-line-height);
+}
