@@ -130,3 +130,54 @@
   gap: var(--gap-between-content);
   margin-block: var(--gap-between-blocks);
 }
+
+.section {
+  display: grid;
+  gap: 20px;
+  padding-inline: var(--main-offset);
+}
+
+.section__title {
+  color: var(--section-title-color);
+  font-size: inherit;
+  font-weight: 700;
+}
+
+.card-list {
+  display: grid;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card__title {
+  font-size: inherit;
+  font-weight: 700;
+}
+
+.card__text {
+  color: var(--card-text-color);
+  font-weight: 400;
+}
+
+.link {
+  text-shadow: 2px 2px var(--accent-color);
+  text-decoration: none;
+}
+
+.link:hover {
+  border-block-end: 1px solid var(--card-text-color);
+}
+
+.link:focus {
+  outline: none;
+}
+
+.link:focus-visible {
+  outline: 1px solid var(--card-text-color);
+  outline-offset: 0 3px;
+}
