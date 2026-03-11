@@ -195,3 +195,21 @@
 .advices__card__title {
   font-weight: 400;
 }
+
+.images__container {
+  padding-inline: var(--main-offset);
+  display: flex;
+  flex-direction: column;
+  gap: var(--main-offset);
+}
+
+.gallery {
+  display: grid;
+  gap: var(--main-offset);
+}
+
+.image {
+  block-size: 100%;
+  inline-size: 100%;
+  object-fit: cover;
+}
