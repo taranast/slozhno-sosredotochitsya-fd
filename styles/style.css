@@ -181,3 +181,17 @@
   outline: 1px solid var(--card-text-color);
   outline-offset: 0 3px;
 }
+
+.advices__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container__description {
+  font-weight: 700;
+}
+
+.advices__card__title {
+  font-weight: 400;
+}
