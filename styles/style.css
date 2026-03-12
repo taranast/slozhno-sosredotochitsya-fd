@@ -1,5 +1,5 @@
 .page {
-  font-family: var(--main-font-family), sans-serif;
+  font-family: var(--main-font-family), monospace;
   font-size: var(--main-text-size);
   line-height: var(--main-text-line-height);
   background-color: var(--bg-color);
@@ -16,23 +16,23 @@
 .decorated-zone::before {
   content: "";
   position: absolute;
-  block-size: 25px;
-  inline-size: 25px;
   bottom: var(--main-offset);
   left: var(--main-offset);
   border-inline-start: 1px solid var(--decoration-color);
   border-block-end: 1px solid var(--decoration-color);
+  block-size: 25px;
+  inline-size: 25px;
 }
 
 .decorated-zone::after {
   content: "";
   position: absolute;
-  block-size: 25px;
-  inline-size: 25px;
   top: var(--main-offset);
   right: var(--main-offset);
   border-inline-end: 1px solid var(--decoration-color);
   border-block-start: 1px solid var(--decoration-color);
+  block-size: 25px;
+  inline-size: 25px;
 }
 
 .header {
@@ -115,11 +115,6 @@
   text-shadow: 4px 4px var(--accent-color);
 }
 
-.title-decor {
-  color: var(--title-decor-text-color);
-  background-color: var(--title-decor-bg-color);
-}
-
 .header__description {
   justify-self: start;
   align-self: center;
@@ -184,7 +179,7 @@
   outline-offset: 0 3px;
 }
 
-.advices__container {
+.content-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -192,20 +187,20 @@
 
 .container__description {
   font-weight: 700;
+  font-size: inherit;
 }
 
-.advices__card__title {
+.alternative-card__title {
   font-weight: 400;
 }
 
-.images__container {
+.gallery {
   display: flex;
   flex-direction: column;
   gap: var(--main-offset);
-  padding-inline: var(--main-offset);
 }
 
-.gallery {
+.images-container {
   display: grid;
   gap: var(--main-offset);
 }
@@ -233,6 +228,11 @@
   text-shadow: 2px 2px var(--accent-color);
 }
 
+.title-decor {
+  color: var(--title-decor-text-color);
+  background-color: var(--title-decor-bg-color);
+}
+
 @media (width >= 768px) {
   .header {
     grid-template-columns: repeat(2, 1fr);
@@ -256,38 +256,33 @@
     grid-template-columns: 1fr 2fr;
   }
 
-  .concentration {
+  .alternative-section {
     grid-template-rows: repeat(2, min-content);
   }
 
-  .concentration__card-list {
-    grid-column: span 2;
+  .alternative-card-list {
+    grid-column: 1 / -1;
     grid-row: 2;
   }
 
-  .images__container {
-    grid-column-start: 1;
-    grid-column-end: 3;
+  .images-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, min-content);
   }
 
-  .gallery {
-    grid-template-columns: 1fr 33vw 1fr;
-    grid-template-rows: min-content 33vw min-content;
-  }
-
-  .sunset-image {
+  .image:first-of-type {
     grid-column: span 2;
   }
 
-  .ice-cream-image {
+  .image:nth-of-type(2) {
     grid-row: span 2;
   }
 
-  .tape-image {
+  .image:nth-of-type(3) {
     grid-row: span 2;
   }
 
-  .street-image {
+  .image:last-of-type {
     grid-column: span 2;
   }
 }
@@ -308,16 +303,16 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .reasons__card-list {
+  .card-list {
     grid-column: span 2;
   }
 
-  .concentration__card-list {
+  .alternative-card-list {
     grid-template-columns: repeat(3, 1fr);
-    grid-column: span 3;
+    grid-column: 1 / -1;
   }
 
-  .advices__container {
+  .content-container {
     grid-column: span 2;
   }
 }
