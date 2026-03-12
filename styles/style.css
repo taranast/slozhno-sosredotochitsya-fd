@@ -228,4 +228,72 @@
   align-self: center;
   justify-self: center;
   line-height: var(--footer-title-line-height);
+  font-weight: 700;
+}
+
+@media (width >= 768px) {
+  :root {
+    --main-offset: 20px;
+    --gap-between-blocks: 60px;
+    --gap-between-content: 80px;
+    --header-title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --footer-title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  .header {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .header__theme-menu {
+    grid-column: 2;
+  }
+
+  .header__title {
+    grid-column: span 2;
+    margin-inline-start: -20px;
+  }
+
+  .header__description {
+    grid-row: 3;
+    grid-column: 2;
+  }
+
+  .section {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .concentration {
+    grid-template-rows: repeat(2, min-content);
+  }
+
+  .concentration__card-list {
+    grid-row: 2;
+    grid-column: span 2;
+  }
+
+  .images__container {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr 33vw 1fr;
+    grid-template-rows: min-content 33vw min-content;
+  }
+
+  .sunset-image {
+    grid-column: span 2;
+  }
+
+  .ice-cream-image {
+    grid-row: span 2;
+  }
+
+  .tape-image {
+    grid-row: span 2;
+  }
+
+  .street-image {
+    grid-column: span 2;
+  }
 }
