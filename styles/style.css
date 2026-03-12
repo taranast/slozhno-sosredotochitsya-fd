@@ -297,3 +297,33 @@
     grid-column: span 2;
   }
 }
+
+@media (width >= 1024px) {
+  .header__theme-menu {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    align-self: start;
+    justify-self: center;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: row;
+  }
+
+  .section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .reasons__card-list {
+    grid-column: span 2;
+  }
+
+  .concentration__card-list {
+    grid-column: span 3;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .advices__container {
+    grid-column: span 2;
+  }
+}
