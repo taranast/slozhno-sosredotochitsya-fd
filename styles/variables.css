@@ -25,3 +25,13 @@
   --footer-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --footer-title-line-height: 83%;
 }
+
+@media (width >= 768px) {
+  :root {
+    --main-offset: 20px;
+    --gap-between-blocks: 60px;
+    --gap-between-content: 80px;
+    --header-title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --footer-title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+}
