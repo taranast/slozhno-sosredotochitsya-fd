@@ -84,14 +84,16 @@
   line-height: var(--menu-button-line-height);
   text-transform: lowercase;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid currentColor;
+  outline: 1px solid currentColor;
+  pointer-events: none;
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--button-hover-border-color);
+  outline: 1px solid var(--button-hover-border-color);
 }
 
 .header__theme-menu-button:focus {
