@@ -13,15 +13,11 @@
   position: relative;
 }
 
-.decorated-zone::before,
-.decorated-zone::after {
+.decorated-zone::before {
   content: "";
   position: absolute;
   block-size: 25px;
   inline-size: 25px;
-}
-
-.decorated-zone::before {
   bottom: var(--main-offset);
   left: var(--main-offset);
   border-inline-start: 1px solid var(--decoration-color);
@@ -29,6 +25,10 @@
 }
 
 .decorated-zone::after {
+  content: "";
+  position: absolute;
+  block-size: 25px;
+  inline-size: 25px;
   top: var(--main-offset);
   right: var(--main-offset);
   border-inline-end: 1px solid var(--decoration-color);
